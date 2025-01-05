@@ -8,6 +8,12 @@
         /*Counter*/
         body {
             counter-reset: game;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
         }
         input:checked {
             counter-increment: game;
@@ -18,6 +24,10 @@
         /*Layers*/
         .phone {
             position: relative;
+            border: 8px solid black;
+            border-radius: 40px;
+            height: 600px;
+            width: 300px;
         }
         .layer-1 {
             position: absolute;
