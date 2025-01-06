@@ -37,8 +37,24 @@
             height: 450px;
             width: 80px;            
             bottom: 0;
-            right: 60px;            
+            right: 60px;
+            animation-name: bunny-1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;                      
         }
+        @keyframes bunny-1{
+            0% {
+                bottom: 0
+            }
+            50% {
+                bottom: -80px
+            }
+            100% {
+                bottom: 0; 
+            }
+        }
+
         .layer-2 {
             position: absolute;
             z-index: 2;
@@ -46,7 +62,23 @@
             width: 80px;            
             bottom: 0;
             left: 60px;
+            animation-name: bunny-2;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
         }
+        @keyframes bunny-2 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: -80px;
+            }
+            100% {
+                bottom: 0;
+            }
+        }
+
         .layer-3 {
             position: absolute;
             z-index: 3;
@@ -67,7 +99,23 @@
             width: 80px;            
             bottom: 0;
             left: 30px;
+            animation-name: bunny-3;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
         }
+        @keyframes bunny-3 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: -80px;
+            }
+            100% {
+                bottom: 0;
+            }
+        }
+
         .layer-5 {
             position: absolute;
             z-index: 5;
@@ -85,7 +133,23 @@
             width: 80px;            
             bottom: 0;
             right: 45px;
+            animation-name: bunny-4;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
         }
+        @keyframes bunny-4 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: -80px;
+            }
+            100% {
+                bottom: 0;
+            }
+        }
+
         .layer-7 {
             position: absolute;
             z-index: 7;
