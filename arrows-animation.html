@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arrows-body {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .arrow {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-top: 12px solid palevioletred;
+            border-left: 12px solid palevioletred;
+            animation: arrow-load 2s infinite;
+            transform: rotate(135deg);
+        }
+        @keyframes arrow-load {
+            0% {
+                opacity: 0;
+                transform: rotate(135deg) translate(60px, 60px);
+            }
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(135deg) translate(-60px, -60px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="arrows-body">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+    </div>
+</body>
+</html>
