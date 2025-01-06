@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .stairs {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-left: 10px solid palevioletred;
+            border-top: 10px solid palevioletred;
+            animation: stairs-load 2s infinite;
+        }
+        .four {
+            animation-delay: 0s;
+        }
+        .three {
+            left: 60px;
+            animation-delay: 0.1s;            
+        }
+        .two {
+            left: 120px;
+            animation-delay: 0.2s;            
+        }
+        .one {
+            left: 180px;            
+            animation-delay: 0.4s;
+        }
+        @keyframes stairs-load {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
